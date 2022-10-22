@@ -73,6 +73,16 @@ nav li {
   text-transform: uppercase;
   font-weight: 600;
 }
+@media screen and (max-width: 1050px) {
+  nav li {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav li {
+    font-size: 13px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -84,6 +94,16 @@ h2, h1 {
   text-transform: uppercase;
   margin: 80px 0px 30px 0px;
 }
+@media screen and (max-width: 1050px) {
+  h2, h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  h2, h1 {
+    font-size: 40px;
+  }
+}
 
 .acces h3 {
   width: 150px;
@@ -94,6 +114,22 @@ h2, h1 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
+}
+@media screen and (max-width: 1050px) {
+  .follow span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .follow span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer p {
+    font-size: 12px;
+  }
 }
 
 nav ul {
@@ -277,15 +313,33 @@ nav {
   height: auto;
   gap: 10px;
 }
+@media screen and (max-width: 800px) {
+  .photos {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 
 .img-galerie {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 800px) {
+  .img-galerie {
+    height: auto;
+  }
+}
 
 .photos div:nth-of-type(1) {
   grid-column: 1/4;
   grid-row: 1/3;
+}
+@media screen and (max-width: 800px) {
+  .photos div:nth-of-type(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
 
 .photos div:nth-of-type(2) {
@@ -342,20 +396,40 @@ nav {
   justify-content: space-between;
   padding: 10vh 5% 10vh 5%;
 }
+@media screen and (max-width: 800px) {
+  .b-img {
+    display: inline-block;
+  }
+}
 
 .bloc-gauche {
   width: 40%;
   padding: 6vh 3% 6vh 3%;
 }
+@media screen and (max-width: 800px) {
+  .bloc-gauche {
+    width: 100%;
+  }
+}
 
 .bloc-droit {
   width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .bloc-droit {
+    width: 100%;
+  }
 }
 
 iframe {
   width: 100%;
   height: 45vh;
   border: 0;
+}
+@media screen and (max-width: 800px) {
+  iframe {
+    margin-top: 30px;
+  }
 }
 
 .hor {
@@ -367,6 +441,11 @@ iframe {
   width: 45%;
   padding: 15px;
   margin-top: 30px;
+}
+@media screen and (max-width: 1050px) {
+  .horaires {
+    width: 65%;
+  }
 }
 
 .horaires h3 {
@@ -384,6 +463,11 @@ iframe {
 .acces {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .acces {
+    margin: 10px 0px 10px 0px;
+  }
 }
 
 .acces p {
@@ -404,10 +488,20 @@ iframe {
   padding: 8px;
   border-radius: 50%;
 }
+@media screen and (max-width: 850px) {
+  .l1 {
+    padding: 5px;
+  }
+}
 
 .l73 {
   padding: 8px;
   border-radius: 50%;
+}
+@media screen and (max-width: 850px) {
+  .l73 {
+    padding: 5px;
+  }
 }
 
 footer div:first-child {
@@ -415,12 +509,24 @@ footer div:first-child {
   padding: 20px 0px 20px 0px;
   justify-content: space-around;
 }
+@media screen and (max-width: 800px) {
+  footer div:first-child {
+    display: inline-block;
+    width: 100%;
+  }
+}
 
 .follow {
   display: flex;
   width: 40%;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .follow {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 
 footer {
@@ -431,11 +537,21 @@ footer {
   font-size: 20px;
   margin-left: 10px;
 }
+@media screen and (max-width: 800px) {
+  .socials i {
+    font-size: 25px;
+  }
+}
 
 .hr-vertical {
   width: 2px;
   height: 70px;
   border: none;
+}
+@media screen and (max-width: 800px) {
+  .hr-vertical {
+    display: none;
+  }
 }
 
 .hr-horizontal {
@@ -455,6 +571,12 @@ footer p {
 
 footer img {
   width: 40%;
+}
+@media screen and (max-width: 800px) {
+  footer img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 video {

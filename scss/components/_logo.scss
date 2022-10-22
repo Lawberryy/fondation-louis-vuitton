@@ -4,4 +4,9 @@
 
 footer img {
     width: 40%;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
